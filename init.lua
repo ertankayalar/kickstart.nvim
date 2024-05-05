@@ -154,6 +154,8 @@ vim.opt.cursorline = true
 -- Minimal number of screen lines to keep above and below the cursor.
 vim.opt.scrolloff = 10
 
+vim.opt.termguicolors = true
+
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
 
@@ -194,6 +196,9 @@ vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper win
 vim.keymap.set('n', '<leader>nt', '<cmd>NvimTreeToggle<CR>', { desc = 'Toggle [N]vim [T]ree' })
 vim.keymap.set('n', '<leader>nr', '<cmd>NvimTreeRefresh<CR>', { desc = '[R]efresh [N]vim [T]ree' })
 vim.keymap.set('n', '<leader>nf', '<cmd>NvimTreeFindFile<CR>', { desc = '[F]ind [N]vim [T]ree' })
+
+-- Copilot maps
+--vim.keymap.set('i', '<C-L>', '<Plug>(copilot-accept-word)')
 
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
