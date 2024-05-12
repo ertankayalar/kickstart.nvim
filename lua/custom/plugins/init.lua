@@ -35,7 +35,7 @@ return {
       vim.g.edge_enable_italic = 1
       vim.g.edge_disable_italic_comment = 1
       vim.g.edge_better_performance = 1
-      vim.cmd.colorscheme 'edge'
+      -- vim.cmd.colorscheme 'edge'
     end,
   },
   {
@@ -50,7 +50,7 @@ return {
         --
       }
 
-      -- vim.cmd.colorscheme 'onedark'
+      vim.cmd.colorscheme 'onedark'
     end,
   },
   {
@@ -64,5 +64,18 @@ return {
       }
       -- vim.cmd.colorscheme 'rose-pine'
     end,
+  },
+  {
+    'binhtran432k/dracula.nvim',
+    lazy = false,
+    priority = 1030,
+    opts = {},
+  },
+  {
+    -- +4
+    'xiantang/darcula-dark.nvim',
+    dependencies = {
+      'nvim-treesitter/nvim-treesitter',
+    },
   },
 }
