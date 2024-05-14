@@ -27,55 +27,83 @@ return {
   --
 
   {
-    'sainnhe/edge',
+    'Mofiqul/adwaita.nvim',
     lazy = false,
     priority = 1000,
     config = function()
-      vim.g.edge_style = 'neon'
-      vim.g.edge_enable_italic = 1
-      vim.g.edge_disable_italic_comment = 1
-      vim.g.edge_better_performance = 1
-      -- vim.cmd.colorscheme 'edge'
+      --      vim.g.adwaita_darker = true
+      vim.cmd.colorscheme 'adwaita'
     end,
   },
-  {
-    'olimorris/onedarkpro.nvim',
-    version = false,
-    --  lazy = false,
-    priority = 1005, -- make sure to load this before all the other start plugins
-    -- Optional; default configuration will be used if setup isn't called.
-    config = function()
-      require('onedarkpro').setup {
-        -- Your config here
-        --
-      }
 
-      vim.cmd.colorscheme 'onedark'
-    end,
-  },
   {
-    'rose-pine/neovim',
-    name = 'rose-pine',
+    'savq/melange-nvim',
     lazy = false,
     priority = 1020,
     config = function()
-      require('rose-pine').setup {
-        --        dark_variant = 'dawn', -- main, moon, or dawn
-      }
-      -- vim.cmd.colorscheme 'rose-pine'
+      --      vim.cmd.colorscheme 'melange'
     end,
   },
+  {
+    'rebelot/kanagawa.nvim',
+    lazy = false,
+    priority = 1030,
+    config = function()
+      require('kanagawa').setup {}
+      -- vim.cmd.colorscheme 'kanagawa-dragon'
+    end,
+  },
+
+  {
+    'f4z3r/gruvbox-material.nvim',
+    name = 'gruvbox-material',
+    lazy = false,
+    priority = 1030,
+    opts = {},
+  },
+  -- {
+  --   'sainnhe/edge',
+  --   lazy = false,
+  --   priority = 1050,
+  --   config = function()
+  --     vim.g.edge_style = 'neon'
+  --     vim.g.edge_enable_italic = 1
+  --     vim.g.edge_disable_italic_comment = 1
+  --     vim.g.edge_better_performance = 1
+  --     -- vim.cmd.colorscheme 'edge'
+  --   end,
+  -- },
+  --   {
+  --     'olimorris/onedarkpro.nvim',
+  --     version = false,
+  --     --  lazy = false,
+  --     priority = 1005, -- make sure to load this before all the other start plugins
+  --     -- Optional; default configuration will be used if setup isn't called.
+  --     config = function()
+  --       require('onedarkpro').setup {
+  --         -- Your config here
+  --         --
+  --       }
+  --
+  -- --      vim.cmd.colorscheme 'onedark'
+  --     end,
+  --   },
+  -- {
+  --   'rose-pine/neovim',
+  --   name = 'rose-pine',
+  --   lazy = false,
+  --   priority = 1020,
+  --   config = function()
+  --     require('rose-pine').setup {
+  --       --        dark_variant = 'dawn', -- main, moon, or dawn
+  --     }
+  --     -- vim.cmd.colorscheme 'rose-pine'
+  --   end,
+  -- },
   {
     'binhtran432k/dracula.nvim',
     lazy = false,
     priority = 1030,
     opts = {},
-  },
-  {
-    -- +4
-    'xiantang/darcula-dark.nvim',
-    dependencies = {
-      'nvim-treesitter/nvim-treesitter',
-    },
   },
 }
