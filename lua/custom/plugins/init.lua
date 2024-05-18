@@ -27,33 +27,27 @@ return {
   --
 
   {
+    'savq/melange-nvim',
+    lazy = false,
+    priority = 1000,
+    config = function()
+      vim.cmd.colorscheme 'melange'
+    end,
+  },
+  {
     'Mofiqul/adwaita.nvim',
     lazy = false,
     priority = 1000,
     config = function()
       --      vim.g.adwaita_darker = true
-      vim.cmd.colorscheme 'adwaita'
+      --- vim.cmd.colorscheme 'adwaita'
     end,
   },
 
   {
-    'savq/melange-nvim',
+    -- +1
+    'ramojus/mellifluous.nvim',
     lazy = false,
-    priority = 1020,
-    config = function()
-      --      vim.cmd.colorscheme 'melange'
-    end,
-  },
-  {
-    'neanias/everforest-nvim',
-    version = false,
-    lazy = false,
-    priority = 1040, -- make sure to load this before all the other start plugins
-    -- Optional; default configuration will be used if setup isn't called.
-    config = function()
-      require('everforest').setup {
-        -- Your config here
-      }
-    end,
-  },
+    priority = 1021,
+  }, -- Lua
 }
