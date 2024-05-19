@@ -25,19 +25,38 @@ return {
   --
   -- If you want to see what colorschemes are already installed, you can use `:Telescope colorscheme`
   --
+  {
+    'rose-pine/neovim',
+    name = 'rose-pine',
+    lazy = false,
+    priority = 1000,
 
+    config = function()
+      vim.cmd.colorscheme 'rose-pine' --
+    end,
+  },
+  {
+    'catppuccin/nvim',
+    name = 'catppuccin',
+    lazy = false,
+    priority = 1001,
+
+    config = function()
+      vim.cmd.colorscheme 'catppuccin-mocha' -- catppuccin catppuccin-latte, catppuccin-frappe, catppuccin-macchiato, catppuccin-mocha
+    end,
+  },
   {
     'savq/melange-nvim',
     lazy = false,
-    priority = 1000,
+    priority = 1031,
     config = function()
-      vim.cmd.colorscheme 'melange'
+      --      vim.cmd.colorscheme 'melange'
     end,
   },
   {
     'Mofiqul/adwaita.nvim',
     lazy = false,
-    priority = 1000,
+    priority = 1032,
     config = function()
       --      vim.g.adwaita_darker = true
       --- vim.cmd.colorscheme 'adwaita'
@@ -48,6 +67,6 @@ return {
     -- +1
     'ramojus/mellifluous.nvim',
     lazy = false,
-    priority = 1021,
+    priority = 1041,
   }, -- Lua
 }
