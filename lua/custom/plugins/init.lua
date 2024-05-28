@@ -27,30 +27,35 @@ return {
   --
   --  { 'EdenEast/nightfox.nvim', lazy = false, priority = 1000 },
   {
-    'olimorris/onedarkpro.nvim',
-    lazy = false,
-    priority = 1000,
-  },
-  {
     'rose-pine/neovim',
     name = 'rose-pine',
     lazy = false,
-    priority = 1001,
+    priority = 1000,
 
     config = function()
-      --      vim.cmd.colorscheme 'rose-pine'
+      vim.cmd.colorscheme 'rose-pine'
     end,
   },
+  -- {
+  --   'diegoulloao/neofusion.nvim',
+  --   priority = 1002,
+  --   -- config = true,
+  -- },
   {
-    'catppuccin/nvim',
-    name = 'catppuccin',
+    'olimorris/onedarkpro.nvim',
     lazy = false,
     priority = 1001,
-
-    config = function()
-      vim.cmd.colorscheme 'catppuccin-frappe' -- catppuccin catppuccin-latte, catppuccin-frappe, catppuccin-macchiato, catppuccin-mocha
-    end,
   },
+  -- {
+  --   'catppuccin/nvim',
+  --   name = 'catppuccin',
+  --   lazy = false,
+  --   priority = 1001,
+  --
+  --   config = function()
+  --     --      vim.cmd.colorscheme 'catppuccin-frappe' -- catppuccin catppuccin-latte, catppuccin-frappe, catppuccin-macchiato, catppuccin-mocha
+  --   end,
+  -- },
   {
     'savq/melange-nvim',
     lazy = false,
@@ -59,20 +64,20 @@ return {
       --      vim.cmd.colorscheme 'melange'
     end,
   },
-  {
-    'Mofiqul/adwaita.nvim',
-    lazy = false,
-    priority = 1032,
-    config = function()
-      --      vim.g.adwaita_darker = true
-      --- vim.cmd.colorscheme 'adwaita'
-    end,
-  },
+  -- {
+  --   'Mofiqul/adwaita.nvim',
+  --   lazy = false,
+  --   priority = 1032,
+  --   config = function()
+  --     --      vim.g.adwaita_darker = true
+  --     --- vim.cmd.colorscheme 'adwaita'
+  --   end,
+  -- },
 
-  {
-    -- +1
-    'ramojus/mellifluous.nvim',
-    lazy = false,
-    priority = 1041,
-  }, -- Lua
+  -- {
+  --   -- +1
+  --   'ramojus/mellifluous.nvim',
+  --   lazy = false,
+  --   priority = 1041,
+  -- }, -- Lua
 }
