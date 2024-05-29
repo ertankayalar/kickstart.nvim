@@ -26,11 +26,21 @@ return {
   -- If you want to see what colorschemes are already installed, you can use `:Telescope colorscheme`
   --
   --  { 'EdenEast/nightfox.nvim', lazy = false, priority = 1000 },
+
+  {
+    'olimorris/onedarkpro.nvim',
+    lazy = false,
+    priority = 1000,
+
+    config = function()
+      vim.cmd.colorscheme 'onedark'
+    end,
+  },
   {
     'rose-pine/neovim',
     name = 'rose-pine',
     lazy = false,
-    priority = 1000,
+    priority = 1002,
 
     config = function()
       vim.cmd.colorscheme 'rose-pine'
@@ -41,11 +51,6 @@ return {
   --   priority = 1002,
   --   -- config = true,
   -- },
-  {
-    'olimorris/onedarkpro.nvim',
-    lazy = false,
-    priority = 1001,
-  },
   -- {
   --   'catppuccin/nvim',
   --   name = 'catppuccin',
